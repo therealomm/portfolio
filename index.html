@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Om Jagtap | Cybersecurity & Machine Learning</title>
+    <meta name="description" content="Om Jagtap — Cybersecurity enthusiast & machine learning practitioner. SOC, VAPT, Network Security, ML for security projects."/>
+    <meta name="author" content="Om Jagtap"/>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+    <!-- Terminal Boot Screen - signed: Om -->
+    <div id="bootScreen" class="boot-screen">
+        <div class="boot-content">
+            <div class="boot-header">
+                <pre class="ascii-art">
+ ____  _____ _   _ _____ _     ___  ____  _____ ____  
+|  _ \| ____| | | | ____| |   / _ \|  _ \| ____|  _ \ 
+| | | |  _| | | | |  _| | |  | | | | |_) |  _| | |_) |
+| |_| | |___| |_| | |___| |__| |_| |  __/| |___|  _ < 
+|____/|_____|\___/|_____|_____\___/|_|   |_____|_| \_\
+                </pre>
+            </div>
+            <div class="boot-terminal">
+                <p><span class="boot-prompt">[SYSTEM]</span> <span class="boot-text">Initializing Cyber-Profile...</span></p>
+                <p><span class="boot-prompt">[BOOT]</span> <span class="boot-text">Loading security modules</span> <span class="boot-dots"></span></p>
+                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Mounting ML toolchain</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[LOAD]</span> <span class="boot-text">Starting SOC services</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[EXEC]</span> <span class="boot-text">Loading projects.sh</span> <span class="boot-dots"></span></p>
+                <p><span class="boot-prompt">[DONE]</span> <span class="boot-text">Profile ready</span> <span class="boot-status boot-ready">[READY]</span></p>
+            </div>
+            <div class="boot-progress">
+                <div class="boot-progress-bar"></div>
+            </div>
+            <p class="boot-footer">Press any key to continue... <span class="boot-sign">— Om</span></p>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">&gt;_security.dev <span class="logo-sign">· Om</span></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#experience" onclick="closeMenu()">Experience</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <a href="#certifications" onclick="closeMenu()">Certifications</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+                <a href="src/assets/resume.pdf" download class="resume-link">Download Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <div class="tag">// Cybersecurity Engineer ▪ Machine Learning Learner</div>
+            <h1>Om Jagtap <small class="inline-sign">— Cybersecurity & ML</small></h1>
+            <p class="subtitle">Securing systems, building detection models, and learning ML to augment defensive capabilities.</p>
+
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                </div>
+                <div class="terminal-text">
+                    <p><span class="prompt">$</span> <span class="command">./get_profile.sh</span></p>
+                    <p class="output">Cybersecurity | Machine Learning for Security | Network Security | VAPT</p>
+                    <p class="output"><span class="prompt">&gt;</span> Intern @ Prodigy Infotech (Cybersecurity)</p>
+                    <p class="output"><span class="prompt">&gt;</span> Projects: Phishing Detection (ResMLP), Sentiment Analysis (NLP), Steganography</p>
+                    <br>
+                    <p><span class="prompt">$</span> <span class="command">cat contact.txt</span></p>
+                    <p class="output">Email: <a href="mailto:omjagtap21@gmail.com" class="link">omjagtap21@gmail.com</a> · GitHub: <a href="https://github.com/therealomm" target="_blank" class="link">therealomm</a></p>
+                    <br>
+                    <p><span class="prompt">$</span> <span class="output">_</span><span style="animation: blink 1s infinite;">|</span></p>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="/mnt/data/OMJAGTAP_RESUME_SECURITY.pdf.pdf" class="btn btn-secondary" download>Download Resume</a>
+                <span class="cta-sign">signed: Om</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hi — I'm <span class="highlight">Om Jagtap</span>, a Cybersecurity enthusiast currently pursuing B.Tech (CSE) with a specialization in Cybersecurity & Forensics. I combine hands-on security experience (internships + virtual trainings) with machine learning projects focused on security tasks like phishing detection and explainable ML.
+                    </p>
+                    <p>
+                        My primary focus areas: network security, vulnerability analysis, zero trust architecture and defensive automation. I'm extending these skills by applying ML (ResMLP, Random Forest, NLP) to build practical detection systems that make security operations more effective.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">B.Tech</div>
+                            <div class="stat-label">CSE — Cybersecurity & Forensics (MIT ADT)</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Intern</div>
+                            <div class="stat-label">Cybersecurity Intern — Prodigy Infotech (Apr–May 2024)</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Learning</div>
+                            <div class="stat-label">Machine Learning & Explainable AI</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dot dot-red"></div>
+                            <div class="code-dot dot-yellow"></div>
+                            <div class="code-dot dot-green"></div>
+                            <span class="code-title">profile.js</span>
+                        </div>
+                        <div class="code-content">
+<pre><code>const om = {
+  name: "Om Jagtap",
+  role: "Cybersecurity Engineer (learning ML)",
+  location: "Pune, India",
+  skills: ["Network Security","VAPT","Zero Trust","Python","ML (scikit, pytorch)","NLP"],
+  experience: ["Prodigy Infotech — Cybersecurity Intern"],
+  projects: ["Phishing Link Detection (ResMLP)", "Sentiment Analysis (NLP)", "Image Steganography"],
+  currentlyPreparing: ["CompTIA Security+"],
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        
+        <div class="skill-category fade-in">
+            <h3>Cybersecurity</h3>
+            <div class="skill-item">
+                <div class="skill-name"><span>Network Security</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Vulnerability Analysis / VAPT</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Zero Trust & SOC Concepts</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-category fade-in" style="animation-delay:0.1s;">
+            <h3>Machine Learning & Programming</h3>
+
+            <div class="skill-item">
+                <div class="skill-name"><span>Python</span><span>40% (Beginner)</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:40%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name"><span>Machine Learning (scikit / ResMLP / RandomForest)</span><span>35% (Beginner)</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:35%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name"><span>NLP / Deep Learning</span><span>30% (Beginner)</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:30%"></div></div>
+            </div>
+        </div>
+
+        <div class="skill-category fade-in" style="animation-delay:0.2s;">
+            <h3>Tools & Dev</h3>
+
+            <div class="skill-item">
+                <div class="skill-name"><span>Git / GitHub</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name"><span>Java</span><span>30% (Beginner)</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:30%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name"><span>AWS / Linux  </span><span>55%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="width:55%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="experience">
+    <h2>Experience & Training</h2>
+    <div class="timeline">
+
+        <!-- Prodigy Internship -->
+        <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Cybersecurity Intern — Prodigy Infotech</h3>
+                <div class="timeline-date">Apr 2024 – May 2024 (Remote)</div>
+                <p class="timeline-description">
+                    Practical exposure to security tools and operations; assisted in vulnerability assessments and hands-on labs.
+                </p>
+
+                <a href="https://prodigyinfotech.dev/verify" 
+                   class="btn btn-primary" 
+                   target="_blank" 
+                   style="margin-top:10px; display:inline-block;">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+
+        <!-- Zscaler Virtual Internship -->
+        <div class="timeline-item fade-in" style="animation-delay:0.1s;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Zscaler Zero Trust Virtual Internship — AICTE</h3>
+                <div class="timeline-date">Jan 2024 – March 2024</div>
+                <p class="timeline-description">
+                    Hands-on training in Zero Trust architecture, ZIA/ZPA concepts, and cloud-delivered security.
+                </p>
+
+                <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=e474774b4df6795f24493dcda06c33a3" 
+                   class="btn btn-primary" 
+                   target="_blank" 
+                   style="margin-top:10px; display:inline-block;">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+
+        <!-- Fortinet Virtual Internship -->
+        <div class="timeline-item fade-in" style="animation-delay:0.2s;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Fortinet Network Security Associate (NSE 1 & 2)</h3>
+                <div class="timeline-date">Sep 2023 – Nov 2023</div>
+                <p class="timeline-description">
+                    Completed NSE 1 and NSE 2 training focused on network security fundamentals, threat landscape, and defensive technologies.
+                </p>
+
+                <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=deec718fb18fd3f6b13e6a149f69bb26"
+                   class="btn btn-primary"
+                   target="_blank"
+                   style="margin-top:10px; display:inline-block;">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+
+        <!-- Palo Alto Virtual Internship -->
+        <div class="timeline-item fade-in" style="animation-delay:0.3s;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Palo Alto Cybersecurity Virtual Internship — AICTE</h3>
+                <div class="timeline-date">May 2023 – June 2023</div>
+                <p class="timeline-description">
+                    Learned NGFW fundamentals, cloud security, and prevention-focused cybersecurity strategies.
+                </p>
+
+                <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=022d0f668b7a9c977cce768b6b4d2fb6" 
+                   class="btn btn-primary"
+                   target="_blank"
+                   style="margin-top:10px; display:inline-block;">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <section id="projects">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <h3>Phishing Link Detection — ResMLP</h3>
+                <p>Built a phishing-link classifier using ResMLP & Random Forest ensembles. Includes feature extraction, model training, and web UI for demo. Stack: Python, scikit-learn, ResMLP, Flask, HTML/CSS/JS.</p>
+                <a href="https://github.com/therealomm" class="project-link" target="_blank">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="project-card fade-in" style="animation-delay:0.1s;">
+                <h3>Sentiment Analysis (NLP)</h3>
+                <p>End-to-end NLP pipeline for sentiment detection using deep learning and explainability techniques. Demonstrated in a peer-reviewed article.</p>
+                <a href="https://github.com/therealomm" class="project-link" target="_blank">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="project-card fade-in" style="animation-delay:0.2s;">
+                <h3>Phishing Detection in Email and SMS using ML and Explainable AI</h3>
+                <p>Web platform for Phishing detection in email/SMS using machine learning, LLMs, and explainable AI to identify malicious messages by analyzing text patterns, sender behavior, and suspicious links. ML models classify messages and explainable AI shows why a message is flagged, improving trust and security.</p>
+                <a href="https://github.com/therealomm" class="project-link" target="_blank">View on GitHub &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications & Awards</h2>
+        <div class="certifications-grid">
+            <div class="cert-card fade-in">
+                <div class="cert-icon">🔐</div>
+                <h3>Zscaler Zero Trust Cyber Associate (ZTCA)</h3>
+                <p>Virtual internship / course — Jan 2024 – Mar 2024</p>
+                <div class="cert-footer"><a href="https://verify.skilljar.com/c/nxpb6s6itnrz" target="_blank" class="cert-link">Verify</a></div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay:0.1s;">
+                <div class="cert-icon">🛡️</div>
+                <h3>The SecOps Group — Certified Network Security Practitioner (CNSP)</h3>
+                <div class="cert-footer"><a href="https://secops.group/certificate-validation/" target="_blank" class="cert-link">Verify</a></div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay:0.2s;">
+                <div class="cert-icon">⚔️</div>
+                <h3>EC-Council CodeRed — Ethical Hacking Essentials</h3>
+                <div class="cert-footer"><a href="https://learn.eccouncil.org/certificate/4f955121-53c4-4bc0-876a-9549a3031642" target="_blank" class="cert-link">Verify</a></div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay:0.3s;">
+                <div class="cert-icon">⛳</div>
+                <h3>Preparing for: CompTIA Security+ (planned)</h3>
+                
+            </div>
+
+            
+        </div>
+    </section>
+<section id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+        <div class="contact-grid">
+
+            <!-- Email -->
+            <div class="contact-item fade-in">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <a href="mailto:omjagtap21@gmail.com">omjagtap21@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item fade-in" style="animation-delay:0.1s;">
+                <div class="contact-icon">📱</div>
+                <h3>Phone</h3>
+                <a href="tel:+919370354481">+91 93703 54481</a>
+                <div class="contact-note">Location: <strong>Pune, Maharashtra</strong></div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-item fade-in" style="animation-delay:0.2s;">
+                <div class="contact-icon">💼</div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/therealomm" target="_blank">github.com/therealomm</a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item fade-in" style="animation-delay:0.3s;">
+                <div class="contact-icon">🔗</div>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/therealomm" target="_blank">linkedin.com/in/therealomm</a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="contact-form fade-in">
+            <form 
+                action="https://formspree.io/f/mvgyqagd" 
+                method="POST"
+            >
+                <div class="form-group">
+                    <label>$ name </label>
+                    <input type="text" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>$ email </label>
+                    <input type="email" name="email" placeholder="you@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>$ message </label>
+                    <textarea name="message" placeholder="Your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+             <div id="formPopup" class="popup hidden">
+              <p id="popupMessage"></p>
+             </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 <span class="signature">Om Jagtap</span>. All rights reserved.</p>
+        <p style="margin-top:0.5rem; font-size:0.9rem;">Made with ❤️ — Cybersecurity & ML</p>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
