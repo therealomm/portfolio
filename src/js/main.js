@@ -49,6 +49,7 @@ document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
 });
 
+/*
 const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -59,6 +60,30 @@ const skillObserver = new IntersectionObserver((entries) => {
                     bar.style.width = width;
                 }, 100);
             });
+            skillObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+*/
+const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const progressBars = entry.target.querySelectorAll('.skill-progress');
+
+            progressBars.forEach(bar => {
+                // Prefer data-width if present, otherwise use existing inline width
+                const dataWidth = bar.getAttribute('data-width');
+                const targetWidth = dataWidth || bar.style.width || '0%';
+
+                // For a nice animation: start from 0, then grow to target
+                bar.style.width = '0%';
+
+                setTimeout(() => {
+                    bar.style.width = targetWidth;
+                }, 100);
+            });
+
+            // Only animate once per category
             skillObserver.unobserve(entry.target);
         }
     });
